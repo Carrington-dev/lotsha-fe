@@ -165,7 +165,7 @@ export default function Header() {
                 <div onClick={ () => router.push("/")} className="flex items-center space-x-2 md:space-x-3">
                 <div className="text-2xl md:text-4xl">🐄</div>
                 <div>
-                    <span className="text-lg md:text-xl font-bold text-gray-900">LivestockHub</span>
+                    <span className="text-lg md:text-xl font-bold text-gray-900">LotshaTrading</span>
                     <p className="text-xs text-gray-600 hidden sm:block">Premium Livestock Trading</p>
                 </div>
                 </div>
