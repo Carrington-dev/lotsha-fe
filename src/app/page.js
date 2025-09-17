@@ -22,6 +22,7 @@ import {
   X,
   Filter
 } from 'lucide-react';
+import Header from '@/components/ui/header/Header';
 
 const LivestockTradingWebsite = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -158,58 +159,6 @@ const LivestockTradingWebsite = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <div className="flex items-center space-x-2 md:space-x-3">
-              <div className="text-2xl md:text-4xl">🐄</div>
-              <div>
-                <span className="text-lg md:text-xl font-bold text-gray-900">LivestockHub</span>
-                <p className="text-xs text-gray-600 hidden sm:block">Premium Livestock Trading</p>
-              </div>
-            </div>
-
-            {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-              <a href="#buy" className="text-gray-600 hover:text-green-600 transition-colors">Buy Livestock</a>
-              <a href="#sell" className="text-gray-600 hover:text-green-600 transition-colors">Sell Livestock</a>
-              <a href="#services" className="text-gray-600 hover:text-green-600 transition-colors">Services</a>
-              <a href="#about" className="text-gray-600 hover:text-green-600 transition-colors">About</a>
-              <a href="#contact" className="text-gray-600 hover:text-green-600 transition-colors">Contact</a>
-              <button className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors text-sm lg:text-base">
-                Get Quote
-              </button>
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="md:hidden">
-              <button
-                onClick={toggleMobileMenu}
-                className="text-gray-600 hover:text-green-600 transition-colors"
-              >
-                {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
-            </div>
-          </div>
-
-          {/* Mobile Navigation Menu */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden bg-white border-t border-gray-100">
-              <div className="px-4 pt-4 pb-6 space-y-4">
-                <a href="#buy" className="block text-gray-600 hover:text-green-600 transition-colors py-2">Buy Livestock</a>
-                <a href="#sell" className="block text-gray-600 hover:text-green-600 transition-colors py-2">Sell Livestock</a>
-                <a href="#services" className="block text-gray-600 hover:text-green-600 transition-colors py-2">Services</a>
-                <a href="#about" className="block text-gray-600 hover:text-green-600 transition-colors py-2">About</a>
-                <a href="#contact" className="block text-gray-600 hover:text-green-600 transition-colors py-2">Contact</a>
-                <button className="w-full bg-green-600 text-white px-4 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
-                  Get Quote
-                </button>
-              </div>
-            </div>
-          )}
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-green-50 via-white to-emerald-50 pt-8 md:pt-12 pb-16 md:pb-20">
